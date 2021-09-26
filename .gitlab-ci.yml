@@ -9,4 +9,4 @@ default:
 
 test:
   script:
-    - docker-compose run app sh -c "python manage.py test && flake9"
+    - docker-compose run app sh -c "python manage.py test && flake8"
