@@ -1,11 +1,13 @@
 default:
-  image: python:3.9.2
+  image: docker:latest
 
   services:
-    - docker
+    - docker:dind
 
   before_script:
-    - pip install docker-compose
+    - apk --no-cache add docker-compose
+    - docker info
+    - docker-compose --version
 
 test:
   script:
