@@ -1,0 +1,12 @@
+default:
+  image: python:3.9.7
+
+  services:
+    - docker
+
+  before_script:
+    - pip install docker-compose
+
+test:
+  script:
+    - docker-compose run app sh -c "python manage.py test && flake9"

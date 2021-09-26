@@ -1,5 +1,5 @@
 FROM python:3.9.7-alpine
-MAINTAINER Jan Justyn Dela Cruz
+LABEL Jan Justyn Dela Cruz
 
 ENV PYTHONUNBUFFERED=1
 
