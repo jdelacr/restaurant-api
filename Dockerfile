@@ -1,4 +1,4 @@
-FROM python:3.9.7-alpine
+FROM python:3.9.2-alpine
 LABEL Jan Justyn Dela Cruz
 
 ENV PYTHONUNBUFFERED=1
